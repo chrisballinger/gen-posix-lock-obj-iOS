@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "gen-posix-lock-obj.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    generate_posix_lock_obj();
 }
 
 - (void)didReceiveMemoryWarning {

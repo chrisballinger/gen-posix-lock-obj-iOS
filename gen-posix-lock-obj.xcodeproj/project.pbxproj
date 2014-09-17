@@ -14,6 +14,7 @@
 		D90B60F819CA4918001E5462 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90B60F719CA4918001E5462 /* Images.xcassets */; };
 		D90B60FB19CA4918001E5462 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D90B60F919CA4918001E5462 /* LaunchScreen.xib */; };
 		D90B610719CA4918001E5462 /* gen_posix_lock_objTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D90B610619CA4918001E5462 /* gen_posix_lock_objTests.m */; };
+		D90B611219CA49FC001E5462 /* gen-posix-lock-obj.c in Sources */ = {isa = PBXBuildFile; fileRef = D90B611019CA49FC001E5462 /* gen-posix-lock-obj.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,11 @@
 		D90B610019CA4918001E5462 /* gen-posix-lock-objTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "gen-posix-lock-objTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D90B610519CA4918001E5462 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D90B610619CA4918001E5462 /* gen_posix_lock_objTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gen_posix_lock_objTests.m; sourceTree = "<group>"; };
+		D90B611019CA49FC001E5462 /* gen-posix-lock-obj.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "gen-posix-lock-obj.c"; sourceTree = "<group>"; };
+		D90B611119CA49FC001E5462 /* posix-lock-obj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "posix-lock-obj.h"; sourceTree = "<group>"; };
+		D90B611319CA4A7E001E5462 /* arm_config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = arm_config.h; sourceTree = "<group>"; };
+		D90B611419CA4B2E001E5462 /* aarch64_config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aarch64_config.h; sourceTree = "<group>"; };
+		D90B611519CA4B62001E5462 /* gen-posix-lock-obj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gen-posix-lock-obj.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,11 @@
 		D90B60E919CA4918001E5462 /* gen-posix-lock-obj */ = {
 			isa = PBXGroup;
 			children = (
+				D90B611419CA4B2E001E5462 /* aarch64_config.h */,
+				D90B611319CA4A7E001E5462 /* arm_config.h */,
+				D90B611019CA49FC001E5462 /* gen-posix-lock-obj.c */,
+				D90B611519CA4B62001E5462 /* gen-posix-lock-obj.h */,
+				D90B611119CA49FC001E5462 /* posix-lock-obj.h */,
 				D90B60EE19CA4918001E5462 /* AppDelegate.h */,
 				D90B60EF19CA4918001E5462 /* AppDelegate.m */,
 				D90B60F119CA4918001E5462 /* ViewController.h */,
@@ -220,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D90B60F319CA4918001E5462 /* ViewController.m in Sources */,
+				D90B611219CA49FC001E5462 /* gen-posix-lock-obj.c in Sources */,
 				D90B60F019CA4918001E5462 /* AppDelegate.m in Sources */,
 				D90B60ED19CA4918001E5462 /* main.m in Sources */,
 			);
