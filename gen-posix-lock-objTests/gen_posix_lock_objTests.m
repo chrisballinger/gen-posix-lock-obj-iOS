@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
+#import "gen-posix-lock-obj.h"
+
 @interface gen_posix_lock_objTests : XCTestCase
 
 @end
@@ -25,16 +27,12 @@
     [super tearDown];
 }
 
-- (void)testExample {
+- (void)testGenerate {
     // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+
+    int result = generate_posix_lock_obj();
+    XCTAssert(result == 0);
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
-}
 
 @end

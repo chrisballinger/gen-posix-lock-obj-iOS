@@ -10,6 +10,6 @@
 #define gen_posix_lock_obj_gen_posix_lock_obj_h
 
 int
-generate_posix_lock_obj (void);
+generate_posix_lock_obj ();
 
 #endif
